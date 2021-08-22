@@ -13,7 +13,7 @@ if(localStorage.getItem("completed") == null){
     var completedObject = JSON.parse(localStorage.getItem("completed"));
 }
 
-
+console.log("object")
 
 document.addEventListener("DOMContentLoaded",() => {
     updateList("tasks",tasksObject,createIncDiv);
