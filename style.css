@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap");
+html {
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: url("./wallpapersden.com_material-design-stock_1280x720.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body h1 {
+  font-size: 2em;
+  text-align: center;
+  color: #A3D2CA;
+}
+
+body h2 {
+  font-size: 1.5em;
+  text-align: center;
+  color: #A3D2CA;
+}
+
+.root {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.root .input {
+  color: azure;
+  height: 5rem;
+  width: 40rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.root .input input {
+  height: 2rem;
+  width: 29rem;
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: none;
+  color: #A3D2CA;
+  font-size: 1.1rem;
+  -webkit-transition: .8s;
+  transition: .8s;
+  padding-left: 1rem;
+}
+
+.root .input input:focus {
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.61);
+  color: #A3D2CA;
+  font-size: 1.1rem;
+}
+
+.root .input input:hover {
+  -webkit-box-shadow: 0 8px 32px 0 rgba(168, 168, 170, 0.548);
+          box-shadow: 0 8px 32px 0 rgba(168, 168, 170, 0.548);
+}
+
+.root .input button {
+  background: rgba(255, 255, 255, 0.05);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(94, 92, 92, 0.308);
+          box-shadow: 0 8px 32px 0 rgba(94, 92, 92, 0.308);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin-left: 1rem;
+  height: 2rem;
+  color: #333333;
+  -webkit-transition: .8s;
+  transition: .8s;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.root .input button:focus {
+  outline: none;
+  border: 1px solid rgba(231, 228, 228, 0.623);
+}
+
+.root .input button:hover {
+  -webkit-box-shadow: 0 8px 32px 0 rgba(168, 168, 170, 0.548);
+          box-shadow: 0 8px 32px 0 rgba(168, 168, 170, 0.548);
+}
+
+.root .tasks {
+  height: auto;
+  width: 40rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(255, 255, 255, 0.075);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(24, 24, 24, 0.123);
+          box-shadow: 0 8px 32px 0 rgba(24, 24, 24, 0.123);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  -webkit-transition: 7s;
+  transition: 7s;
+}
+
+.root .tasks .task {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.root .tasks .task button {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border-radius: 5px;
+  border: 1px solid rgba(29, 29, 29, 0.18);
+  margin-left: 1rem;
+  height: 2rem;
+  color: #222222;
+  -webkit-transition: .8s;
+  transition: .8s;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.root .tasks .task button:focus {
+  outline: none;
+  border: 1px solid rgba(32, 32, 32, 0.58);
+}
+
+.root .tasks .task button:hover {
+  -webkit-box-shadow: 0 8px 32px 0 rgba(181, 182, 185, 0.76);
+          box-shadow: 0 8px 32px 0 rgba(181, 182, 185, 0.76);
+}
+
+.root .tasks .task p {
+  font-size: 1.3rem;
+}
+
+.root .tasks-complete {
+  height: auto;
+  width: 40rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(255, 255, 255, 0.11);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(224, 221, 221, 0.062);
+          box-shadow: 0 8px 32px 0 rgba(224, 221, 221, 0.062);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.root .tasks-complete .task {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 20rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.root .tasks-complete .task button {
+  background: rgba(255, 255, 255, 0.05);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(211, 212, 216, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(211, 212, 216, 0.37);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border-radius: 5px;
+  border: 1px solid rgba(29, 29, 29, 0.18);
+  margin-left: 1rem;
+  height: 2rem;
+  color: #4b4b4b;
+  -webkit-transition: .8s;
+  transition: .8s;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.root .tasks-complete .task button:focus {
+  outline: none;
+  border: 1px solid rgba(77, 75, 75, 0.58);
+}
+
+.root .tasks-complete .task button:hover {
+  -webkit-box-shadow: 0 8px 32px 0 rgba(211, 212, 216, 0.97);
+          box-shadow: 0 8px 32px 0 rgba(211, 212, 216, 0.97);
+}
+
+.root .tasks-complete .task p {
+  font-size: 1.3rem;
+}
+/*# sourceMappingURL=style.css.map */
