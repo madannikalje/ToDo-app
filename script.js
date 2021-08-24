@@ -13,7 +13,17 @@ if(localStorage.getItem("completed") == null){
     var completedObject = JSON.parse(localStorage.getItem("completed"));
 }
 
-console.log("object")
+
+let i = document.getElementById("input");
+i.addEventListener("keypress",(a) => {
+    i.style.boxShadow = "0 8px 32px 10px rgba(168, 168, 170, 0.948)";
+    console.log(a.key)
+    setTimeout(() => {
+        i.style.boxShadow = "";
+    },300)
+})
+
+
 
 document.addEventListener("DOMContentLoaded",() => {
     updateList("tasks",tasksObject,createIncDiv);

@@ -85,11 +85,6 @@ body h2 {
   font-size: 1.1rem;
 }
 
-.root .input input:hover {
-  -webkit-box-shadow: 0 8px 32px 0 rgba(168, 168, 170, 0.548);
-          box-shadow: 0 8px 32px 0 rgba(168, 168, 170, 0.548);
-}
-
 .root .input button {
   background: rgba(255, 255, 255, 0.05);
   -webkit-box-shadow: 0 8px 32px 0 rgba(94, 92, 92, 0.308);
